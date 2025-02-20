@@ -36,7 +36,7 @@ Elements Structure: Ensured proper use of <header>, <nav>, <section>, and <foote
     <meta name="author" content="Jason Arbeed">
 
     <!-- Favicon for the website -->
-    <link rel="icon" type="images/x-icon" href="images/J image.png">
+    <link rel="icon" type="images/x-icon" href="images/Jimage.png">
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" type="text/css" href="styles3.css">
