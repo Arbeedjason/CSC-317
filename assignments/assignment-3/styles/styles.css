@@ -1,0 +1,194 @@
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #444;
+    --accent-color: #ffcc00;
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --hover-color: #578cff;
+    --card-text-color: #000000;
+    --font-style: "Arial", sans-serif;
+}
+
+/* === Global Styles === */
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-style);
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* === Header Section === */
+header {
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+header img {
+    border-radius: 30%;
+    margin: 10px;
+    border: 3px solid rgb(0, 0, 0);
+    max-width: 150px;
+    height: auto;
+}
+
+/* === Navigation Bar === */
+nav {
+    background: var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* === Main Content Area === */
+main {
+    padding: 20px;
+    max-width: 850px;
+    margin: auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+/* === Sections Styling === */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 850px;
+    transition: transform 0.4s ease-in-out;
+    color: var(--card-text-color);
+    background-color: white;
+}
+
+section:hover {
+    transform: scale(1.08);
+}
+
+/* === Headings === */
+h2 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+/* === Text Content === */
+p, ul, ol, table, td {
+    color: var(--card-text-color);
+    font-family: var(--font-style);
+}
+
+/* === Lists Styling === */
+ul, ol {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+/* === Tables Styling === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* === Footer Section === */
+footer {
+    text-align: center;
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+    
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+    }
+    
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+}
