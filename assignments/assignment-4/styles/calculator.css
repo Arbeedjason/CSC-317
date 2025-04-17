@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #000;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  #display {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 20px 10px;
+    height: 100px;
+    overflow-x: auto;
+  }
+  
+  #expression {
+    font-size: 1.5rem;
+    color: #aaa;
+    height: 24px;
+  }
+  
+  #current {
+    font-size: 3.5rem;
+    color: white;
+    height: 60px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+  
+  /* Shared button styles */
+  .btn {
+    height: 80px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  /* Color-coded button types */
+  .number {
+    background-color: #333;
+    color: white;
+  }
+  
+  .operator {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  .utility {
+    background-color: #a5a5a5;
+    color: black;
+  }
+  
+  .equal {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  /* Special styles for 0 button */
+  .zero {
+    grid-column: span 2;
+    border-radius: 40px;
+    text-align: left;
+    padding-left: 28px;
+  }
+  
+  /* Hover effect */
+  .btn:hover {
+    filter: brightness(1.2);
+  }
+  
+  /* Responsive text */
+  @media (max-width: 400px) {
+    #current {
+      font-size: 3rem;
+    }
+  
+    .btn {
+      font-size: 1.5rem;
+      height: 70px;
+    }
+  }
+  
